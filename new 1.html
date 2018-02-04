@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>  
+  <meta http-equiv="Content-Type" content="text/html; charset=gbk"/>   
+  <script type="text/javascript">  
+      function openWindow(){
+	var a=confirm("是否打开新网站");
+	
+	if(a==true){
+	var b=prompt("输入网站名称");
+	
+	}
+	else { 
+	alert('已取消打开');
+	}
+	if (b!==null){
+	window.open('b','_blank','width=400,height=500,menubar=no,toolbar=no');
+	}
+	else {
+	window.open('http://www.imooc.com/','_blank','width=400,height=500,menubar=no,toolbar=no');
+	}
+	}
+	
+        
+    
+    
+    
+    
+  </script> 
+ </head> 
+ <body> 
+	  <input type="button" value="新窗口打开网站" onclick="openWindow()" /> 
+ </body>
+</html>

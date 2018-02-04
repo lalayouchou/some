@@ -1,0 +1,35 @@
+	<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js">
+	$(document).ready(functio(){
+	var elts = {};//创建新的对象
+$('#test-form :text, #test-form :password, #test-form input:checked, #test-form select').map(function () {/*注意，上边#test-form input:checked一定要加上input，因为：checked会同时选中下拉菜单的某一个节点 select不能改成:selected,修改之后只能找的是option节点，找不到name值*/
+    elts[this.name] = this.value;//对象的另一种赋值方法:xiaoming.age=18;xiaoming[age]=18;
+});
+json = JSON.stringify(elts);//将对象转化为JSON字符串的方法，JSON.stringify();
+});
+	</script>
+	</head>
+	<body>
+	<!-- 对于下面的表单： -->
+	<!-- 输入值后，用jQuery获取表单的JSON字符串，key和value分别对应每个输入的name和相应的value，例如：{"name":"Michael","email":...} -->
+	<form id="test-form" action="#0" onsubmit="return false;">
+    <p><label>Name: <input name="name"></label></p>
+    <p><label>Email: <input name="email"></label></p>
+    <p><label>Password: <input name="password" type="password"></label></p>
+    <p>Gender: <label><input name="gender" type="radio" value="m" checked> Male</label> <label><input name="gender" type="radio" value="f"> Female</label></p>
+    <p><label>City: <select name="city">
+        <option value="BJ" selected>Beijing</option>
+        <option value="SH">Shanghai</option>
+        <option value="CD">Chengdu</option>
+        <option value="XM">Xiamen</option>
+    </select></label></p>
+    <p><button type="submit">Submit</button></p>
+</form>	
+	</body>
+
+	</html>
+

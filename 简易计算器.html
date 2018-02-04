@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> 事件</title>  
+  <script type="text/javascript">
+  
+   function count(){
+   var a=parseInt(document.getElementById('txt1').value);//parseInt()把字符串转化为整数输出;
+   var b=parseInt(document.getElementById('txt2').value);
+   var c=document.getElementById("select").value;
+   var e;
+   switch(c){
+       case "+"://case 空格 数字字符串等 ：（不要忘记":";)
+       e=a+b;
+       break;
+        case "-":
+       e=a-b;
+       break;
+        case "*":
+       e=a*b;
+       break;
+        case "/":
+       if(b===0){
+           alert("不能用0作为除数！")
+           
+       }
+       else{
+           e=a/b;
+       }
+       break;//最后也可写default;
+   }
+   document.getElementById("fruit").value=e;
+  
+    //获取第一个输入框的值
+	//获取第二个输入框的值
+	//获取选择框的值
+	//获取通过下拉框来选择的值来改变加减乘除的运算法则
+    //设置结果输入框的值 
+    
+   }
+  </script> 
+ </head> 
+ <body>
+   <input type='text' id='txt1' /> 
+   <select id='select'>
+		<option value='+'>+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+   </select>
+   <input type='text' id='txt2' /> 
+   <input type='button' value=' = ' onclick="count()"/> <!--通过 = 按钮来调用创建的函数，得到结果--> 
+   <input type='text' id='fruit' />   
+ </body>
+</html>

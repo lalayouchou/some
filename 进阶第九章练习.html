@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>  
+  <meta http-equiv="Content-Type" content="text/html; charset=gbk"/>   
+  <script type="text/javascript"> 
+ 
+     window.onload = function(){
+                  var tr=document.getElementsByTagName("tr");
+                  tr.onmouseenter=function{}
+     /*鼠标移动改变背景,可以通过给每行绑定鼠标移上事件和鼠标移除事件来改变所景色。*/
+         
+		
+     
+	 
+	 }
+         var abb=function(){
+	  var parent=document.getElementById("table");
+	  var table_tr=document.createElement("tr");
+	 table_tr.innerHTML="<td>学号</td><td>姓名</td><td></td>";
+	
+	  parent.appendChild(table_tr);
+	  }
+	
+     var remove=function(i){
+	 var efg=document.getElementById("table");
+	 var abc=document.getElementsByTagName("tr");
+	 efg.removeChild(egf.childNodes[i]);
+	 }
+  </script> 
+ </head> 
+ <body> 
+	   <table border="1" width="50%" id="table">
+	   <tr>
+		<th>学号</th>
+		<th>姓名</th>
+		<th>操作</th>
+	   </tr>  
+
+	   <tr>
+		<td>xh001</td>
+		<td>王小明</td>
+		<td><a href="javascript:remove(1);" >删除</a></td>   <!--在删除按钮上添加点击事件  -->
+	   </tr>
+
+	   <tr>
+		<td>xh002</td>
+		<td>刘小芳</td>
+		<td><a href="javascript:remove(2);" >删除</a></td>   <!--在删除按钮上添加点击事件  -->
+	   </tr>  
+
+	   </table>
+	   <input type="button" value="添加一行" onclick="abb()" />   <!--在添加按钮上添加点击事件  -->
+ </body>
+</html>

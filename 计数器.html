@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+var num=0;
+function numCount(){
+ document.getElementById('txt').value=num;
+ num=num+1;
+ setTimeout("numCount()",1000);//不能使用setInterval(),似乎有重叠。
+ }
+
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="txt" />
+<input type="button" value="Start" onClick="numCount()" />
+</form>
+</body>
+</html>
