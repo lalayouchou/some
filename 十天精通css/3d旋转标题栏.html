@@ -6,7 +6,14 @@
 	<style>
         @import url("http://www.w3cplus.com/demo/css3/base.css");
         /*任务一：引入本地字体文件*/
-        
+        @font-face{
+          font-family:"songjie";
+          src: url('http://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.eot');
+          src: url('http://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.eot?#iefix') format('embedded-opentype'),
+           url('http://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.woff') format('woff'),
+           url('http://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.ttf') format('truetype'),
+           url('http://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.svg#sansationregular') format('svg');
+        }
         body {
         	background-color:#edecec;
         }
@@ -31,7 +38,7 @@
         	display: block;
         	text-decoration: none;
           /*调用本地字体*/
-        	
+        	font-family: "songjie";
           -webkit-font-smoothing: antialiased;
         	-moz-font-smoothing: antialiased;
         	font-smoothing: antialiased;
@@ -45,9 +52,17 @@
         
         .three-d {
           /* 任务三、设置3D舞台布景 */
-        
+        -webkit-perspective: 200px;
+        -moz-perspective: 200px;
+        -ms-perspective: 200px;
+        -o-perspective: 200px;
+        perspective: 200px;
           /*任务四、设置3D舞台布景过渡效果*/
-        
+        -webkit-transition:all .7s linear ;
+        -moz-transition:all .7s linear ;
+        -ms-transition:all .7s linear ;
+        -o-transition:all .7s linear ;
+        transition:all .7s linear ;
           position: relative;
         }
         
