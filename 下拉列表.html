@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<style type="text/css">
+a{
+    text-decoration: none;
+}
+ul{ width: 50%;
+       text-align: center;
+       overflow:hidden;/*//不设置引起高度坍塌；清除浮动*/
+       background: #000;
+}
+  ul li{
+    cursor:pointer;
+    list-style:none;
+    float: left;
+    padding:10px 15px;
+    background: rgb(230,230,230);
+  } 
+  ul>div{
+    position: relative;
+    float: left;
+  } 
+  .box{
+    display:block;
+    background: rgb(230,230,230);
+     padding:10px 15px;
+  }
+.box1{  
+        display: none;
+        position: absolute;
+        right: 0;
+}
+
+.box1 a{
+    display: block;
+    width: 160px;
+    background: rgb(230,230,230);
+    text-align:center;
+    padding: 8px 0; 
+}
+ul>div:hover  .box1{注意是设置父元素hover
+    display:block;
+}
+.box1 a:hover{
+    background: #fff;
+}
+</style>
+</head>
+<body>
+    <ul>
+        <li>主页</li>
+        <li>菜单</li>
+        <div><a href="#" class="box">下拉列表</a>
+            <div class="box1">
+                <a href="#">列表1</a>
+                <a href="#">列表1</a>
+                <a href="#">列表1</a>
+            </div>
+        </div>
+    </ul>
+</body>
+</html>
