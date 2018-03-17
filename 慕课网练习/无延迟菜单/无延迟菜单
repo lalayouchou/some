@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.warp{
+			position: reative;
+			width: 200px;
+			left: 50px;
+			top: 50px;
+		}
+		tl{
+			padding: 15px 0;
+			margin: 9px;
+			list-style: none;
+			background: #6c6669;
+			color: #fff;
+			padding: 0;
+			border-right-width:0；
+
+		}
+		li{
+			display: block;
+			height: 30px;
+			line-height: 30px;
+			padding-left: 12px;
+			cursor: pointer;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<div class="warp">
+		<ul>
+			<li id="a"></li>
+		</ul>
+	</div>
+
+</body>
+</html>
