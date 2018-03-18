@@ -11,8 +11,22 @@ $(document).ready(function(){
 		mouseInsub=false;
 	});
 
+	var mouseTrack= [];
+	var moveHandler =function (e) {
+		mouseTrack.push({
+			x:e.pageX,
+			y:e.pageY
+		});
+		if (mouseTrack.length>3) {
+			mouseTrack.shift();
+		}
+	}
+
+
 	$('#test').on('mouseenter',function(e) {
 		sub.removeClass('none');
+
+		$(document).on('mousemove',moveHandler);
 	})
 	.on('mouseleave',function(e) {
 		sub.addClass('none');
@@ -24,8 +38,9 @@ $(document).ready(function(){
 			activeMenu.addClass('none');
 			activeMenu=null;
 		}
+		$(document).off("mousemove");
 	})/*;
-	$('#test li').on('mouseenter',function(e) {*///在jquery中，mouseenter是通过mouseover实现的，只是模拟类似不冒泡，其实还是可以为特定子元素绑定事件，只不过只能是子元素本身触发事件，而不是孙子元素
+	$('#test li').on('mouseenter',function(e) {*///ÔÚjqueryÖÐ£¬mouseenterÊÇÍ¨¹ýmouseoverÊµÏÖµÄ£¬Ö»ÊÇÄ£ÄâÀàËÆ²»Ã°ÅÝ£¬ÆäÊµ»¹ÊÇ¿ÉÒÔÎªÌØ¶¨×ÓÔªËØ°ó¶¨ÊÂ¼þ£¬Ö»²»¹ýÖ»ÄÜÊÇ×ÓÔªËØ±¾Éí´¥·¢ÊÂ¼þ£¬¶ø²»ÊÇËï×ÓÔªËØ
 	// .on("mouseenter",'li',function(e) {
 	var lis=document.getElementsByTagName('li');
 	for (var i = 0; i < lis.length; i++) {
@@ -43,6 +58,12 @@ $(document).ready(function(){
 						clearTimeout(timer);
 					}
 
+					var currMousepos = mouseTrack[mouseTrack.length-1];
+					var leftCorner = mouseTrack[mouseTrack.length-2];
+
+					var delay = needDelay(sub,leftCorner,currMousepos);
+					
+					if (delay) {
 					timer=setTimeout(function() {
 						if(mouseInsub===true){
 							return;
@@ -57,7 +78,20 @@ $(document).ready(function(){
 						activeMenu=$('#'+activeRow.data('id'));
 						activeMenu.removeClass('none');
 						timer = null;
-					},300);
+						console.log("yes");
+					},300);	
+				}else{
+					activeRow.removeClass('active');
+					activeMenu.addClass('none');
+
+					activeRow=$(e.target);
+					activeRow.addClass('active');
+					activeMenu=$('#'+activeRow.data('id'));
+					activeMenu.removeClass('none');
+					console.log("no");
+				}
+
+
 
 
 				});

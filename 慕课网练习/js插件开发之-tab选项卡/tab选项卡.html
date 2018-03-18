@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tab选项卡</title>
+<style>
+*{margin: 0;padding: 0;}
+body{background: #323232;font-size: 12px;font-family: "微软雅黑"}
+</style>
+<link rel="stylesheet" href="tab.css" type="text/css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div class="js-tab tab" data-config=		'{
+				"triggerType" :"clic",
+				"effect":"default",
+				"invoke":1,
+				"auto":false
+			}'><!-- 这里必须用单引号 -->
+		<ul class="tab-nav">
+			<li class="active"><a href="javascript:">新闻</a></li>
+			<li><a href="javascript:">娱乐</a></li>
+			<li><a href="javascript:">电影</a></li>
+			<li><a href="javascript:">科技</a></li>
+		</ul>
+		<div class="content">
+			<div class="content-item active-con"><img src="3.jpg" alt=""></div>
+			<div class="content-item"><img src="1.png" alt=""></div>
+			<div class="content-item"><img src="2.png" alt=""></div>
+			<div class="content-item"><img src="3.jpg" alt=""></div>
+		</div>
+	</div>
+	<script src="tab.js"></script>
+</body>
+</html>
