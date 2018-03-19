@@ -37,18 +37,39 @@ $(document).ready(function() {
 	//绑定事件，防止事件写错，设置放错机制
 	if (config.triggerType==="click") {
 		this.tabItems.on(config.triggerType, function(){
-			alert('msg');
+			//事件切换函数
+			_this_.invoke($(this));
+			console.log(this);
+
 		});
 	}else if(config.triggerType==="mouseover" || config.triggerType!=="click"){
 		this.tabItems.on("mouseover", function(){
-			alert('小仙女');
+			_this_.invoke($(this));
+			console.log(this);
 		});
 	}
 
-	
+	//自动切换功能，当配置了时间，我们就根据时间间隔进行自动切换
+	if (config.auto) {
+
+		//定义一个全局的定时器
+		this.timer = null;
+		//计数器
+		this.loop = 0;
+
+		this.autoPlay();
+	}
 	};
 
 	Tab.prototype={
+
+		//自动间隔时间切换
+		autoPlay:function(){
+			var _this_=this,
+			tabItems=this.tabItems,
+			tabLength = tabItems.length;
+
+		}
 
 		//获取配置参数：
 		getConfig:function() {
@@ -59,6 +80,27 @@ $(document).ready(function() {
 				return $.parseJSON(config);
 			}else{
 				return null;
+			}
+		},
+
+		invoke:function(currentTab) {
+			var _this_=this;
+
+			/*要执行Tab的选中状态，当前选中的加上actived(标记为白底)
+			切换对应的tab内容，根据配置参数的effect是default还是fade*/
+			var index=currentTab.index()
+			//tab选中状态
+			currentTab.addClass('active').siblings().removeClass();//链式调用
+			//切换内容选中区域
+			
+			var effect=this.config.effect;
+			var conItems=this.contentItems;
+			if (effect==="default"||effect!=="fade") {
+
+				conItems.eq(index).addClass("active-con").siblings().removeClass("active-con");
+
+			}else if (effect==="fade") {
+				conItems.eq(index).fadeIn().siblings().fadeOut();
 			}
 		}
 	}

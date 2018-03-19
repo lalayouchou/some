@@ -26,20 +26,26 @@ a{
 	color: #fff;
 	line-height: 30px;
 }
-.tab .tab-nav .active a{
+.tab .tab-nav li.active a{
 	background: #fff;
 	color: black;
 }
 .content{
+	position: relative;
 	background: #fff;
 	padding: 5px;
 	height: 200px;
 }
+.content-item{
+	display: none;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
 .content-item img{
 	height: 200px;
 	width: 290px;
-	display: none;
 }
-.active-con img{
+.active-con{
 	display: block;
 }
