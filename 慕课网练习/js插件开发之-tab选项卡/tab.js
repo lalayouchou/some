@@ -1,5 +1,8 @@
 $(document).ready(function() {
-	var tab1= new Tab($(".js-tab").eq(0));
+/*	var tab1= new Tab($(".js-tab").eq(0));*/
+/*	Tab.init($('.js-tab'));---2*/
+$('.js-tab').tab();//扩展jQuery插件法
+
 });
 
 (function($) {
@@ -54,22 +57,48 @@ $(document).ready(function() {
 
 		//定义一个全局的定时器
 		this.timer = null;
-		//计数器
-		this.loop = 0;
+		//计数器,如果传入的不是1-4，则默认为0;
+		if (/[1-4]/.test(config.invoke)) {
+			this.loop = config.invoke-1;
+		}else{
+			this.loop = 0;
+		}
+		
 
 		this.autoPlay();
+
+		this.tab.hover(function() {
+			window.clearInterval(_this_.timer);
+		}, function() {
+			_this_.autoPlay();
+		});
+	
 	}
-	};
+				//设置初始显示页面
+		this.invoke(this.tabItems.eq(this.loop));
+
+
+	}
+
 
 	Tab.prototype={
 
 		//自动间隔时间切换
 		autoPlay:function(){
 			var _this_=this,
-			tabItems=this.tabItems,
-			tabLength = tabItems.length;
+			tabItems=this.tabItems,//临时保存tab列表
+			tabLength = tabItems.length,//tab的个数
+			config = this.config;
 
-		}
+			this.timer = window.setInterval(function () {
+				_this_.loop++;
+				if(_this_.loop>=tabLength){
+					_this_.loop = 0;
+				}
+				tabItems.eq(_this_.loop).trigger(config.triggerType);
+			},config.auto);
+
+		},
 
 		//获取配置参数：
 		getConfig:function() {
@@ -83,6 +112,8 @@ $(document).ready(function() {
 			}
 		},
 
+
+		// 事件驱动函数	
 		invoke:function(currentTab) {
 			var _this_=this;
 
@@ -102,9 +133,37 @@ $(document).ready(function() {
 			}else if (effect==="fade") {
 				conItems.eq(index).fadeIn().siblings().fadeOut();
 			}
+
+			// 如果设置了自动切换，记得把当前的loop的值设置为当前tab的index
+			if (this.config.auto) {
+				this.loop =index;
+			}
 		}
 	}
 
-	window.Tab = Tab;
+/*页面中有多个js-tab时，统一使用构造函数--方法一*/
+/*	Tab.init=function(tabs){
+
+		tabs.each(function() {
+			
+			new Tab($(this));
+
+		});
+	}--2*/
+/*页面中有多个js-tab时，统一使用构造函数--方法二*/
+	$.fn.extend({
+		tab:function(){
+			this.each(function() {
+				new Tab($(this));
+			});
+
+			return this;
+		}
+	});
+	
+
+
+
+	window.Tab = Tab;//在函数外也可以访问到函数内部的方法，变量
 })(jQuery);//更具实际项目，可以传，但有的项目万一用了其他的库，
 /*$可能也代表其他的变量，jQuery传进去，在闭包函数内，$作为形参就表示jQuery*/
