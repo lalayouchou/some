@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<link rel="stylesheet" href="carousel.css" type="text/css">
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+</head>
+<body>
+	<div class="carousel">
+		<div class="carousel-nav">
+		</div>
+	</div>
+	<script src="carousel.js"></script>
+	<script>
+	var	data={
+			imgs:["image/1521456135438.jpg",
+				"image/1521513218486.jpg",
+				"image/1521513218486.jpg",
+				"image/1521513218486.jpg",
+				"image/1521513218486.jpg"
+			],
+			herf:["#","#","#","#","#"],
+			alt:[],
+			b:["尼玛睡前正能量之《丑烤鸭的故事》",
+			"尼玛睡前正能量之《丑烤鸭的故事》",
+			"尼玛睡前正能量之《丑烤鸭的故事》",
+			"尼玛睡前正能量之《丑烤鸭的故事》",
+			"尼玛睡前正能量之《丑烤鸭的故事》"
+			]
+		};
+		var lunbo= new carousel(data);
+	</script>
+</body>
+</html>
