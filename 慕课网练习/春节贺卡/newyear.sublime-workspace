@@ -1,0 +1,631 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"whs-n",
+				"whs-nw\twhite-space: nowrap;"
+			],
+			[
+				"ei",
+				"ellipsis"
+			],
+			[
+				"node",
+				"nodeName\t: DOMString Node"
+			],
+			[
+				"leng",
+				"length\t: int Function"
+			],
+			[
+				"fin",
+				"find\t.find()"
+			],
+			[
+				"ov",
+				"overflow-x"
+			],
+			[
+				"eid",
+				"eidtText"
+			],
+			[
+				"ch",
+				"children\t.children()"
+			],
+			[
+				"prev",
+				"preview"
+			],
+			[
+				"fou",
+				"focus\t.focus()"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"p",
+				"preview"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"bad",
+				"background"
+			],
+			[
+				"eidt",
+				"eidt-text"
+			],
+			[
+				"eidt-",
+				"eidt-num"
+			],
+			[
+				"m-h",
+				"min-height"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"conlo",
+				"console_log"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"read",
+				"ready\tdocument.ready - $(function(){})"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"fl",
+				"flex"
+			],
+			[
+				"ov-a",
+				"ovy-a\toverflow-y: auto;"
+			],
+			[
+				"tar",
+				"textarea"
+			],
+			[
+				"hasp",
+				"hasOwnProperty"
+			],
+			[
+				"clone",
+				"clone"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"fib",
+				"fib"
+			],
+			[
+				"set_",
+				"set_prefix"
+			],
+			[
+				"perfix",
+				"prefix\t: DOMString Element"
+			],
+			[
+				"foo",
+				"floor\t( x: number ): number Math"
+			],
+			[
+				"rom",
+				"romans"
+			],
+			[
+				"roma",
+				"roman"
+			],
+			[
+				"a",
+				"abbr\t<abbr>"
+			],
+			[
+				"rotate",
+				"rotateY()"
+			],
+			[
+				"trans",
+				"translateY()"
+			],
+			[
+				"k",
+				"@keyframes"
+			],
+			[
+				"getEle",
+				"getElementsByTagName\t( localName: DOMString ): HTMLCollection Document"
+			],
+			[
+				"document",
+				"document\t: Document Window"
+			],
+			[
+				"rota",
+				"rotateX()"
+			],
+			[
+				"tran",
+				"translateZ()"
+			],
+			[
+				"nth",
+				"nth-child()"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"ins",
+				"instranceof"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"eve",
+				"event"
+			],
+			[
+				"ta",
+				"target\t: EventTarget Event"
+			],
+			[
+				"hand",
+				"handler"
+			],
+			[
+				"und",
+				"undefined\t: object Global"
+			],
+			[
+				"console",
+				"console_log"
+			],
+			[
+				"sp",
+				"splice\t( start: int, deleteCount: int, items_..: any ): Array Array"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"Arr",
+				"Array"
+			],
+			[
+				"f",
+				"f\tAnonymous Function"
+			],
+			[
+				"handl",
+				"handleClick"
+			],
+			[
+				"handle",
+				"handler"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"Obje",
+				"Object"
+			],
+			[
+				"th",
+				"this\t$(this)"
+			],
+			[
+				"repea",
+				"repeat-x"
+			],
+			[
+				"ma-l",
+				"margin-left"
+			],
+			[
+				"lin-",
+				"line-height"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"c",
+				"calc()"
+			],
+			[
+				"cl",
+				"clearfix"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"col",
+				"color1"
+			],
+			[
+				"ani",
+				"animation"
+			],
+			[
+				"par",
+				"parse\t( json: string ): any JSON"
+			],
+			[
+				"gete",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"to",
+				"timeout\tsetTimeout function"
+			],
+			[
+				"ain",
+				"animtf\tanimation-timing-function: ${1:linear};"
+			],
+			[
+				"i",
+				"inline-block"
+			],
+			[
+				"m",
+				"m-a\tmargin: auto;"
+			],
+			[
+				"tr",
+				"trf\ttransform"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"sm",
+				"sm-box-3"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 301.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS3"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pc",
+				"Package Control: Remove Package"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"css3",
+				"Set Syntax: CSS3"
+			],
+			[
+				"warp",
+				"Emmet: Wrap With Abbreviation"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"M",
+				"Set Syntax: Markdown"
+			],
+			[
+				"Package Control: Disable Package",
+				"Package Control: Disable Package"
+			],
+			[
+				"heml",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"",
+				"View: Toggle Menu"
+			]
+		],
+		"width": 448.0
+	},
+	"console":
+	{
+		"height": 178.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/lalayouchou/Desktop/s.html",
+		"/E/IT/杂项练习/some/慕课网练习/春节贺卡/newyear.html",
+		"/E/IT/新建文件夹/111.html",
+		"/E/IT/百度前端学院练习/2017-baidu/糯米学院/简易MarkDown语法编辑器/markdown2.css",
+		"/E/IT/百度前端学院练习/2017-baidu/糯米学院/简易MarkDown语法编辑器/markdown2.js",
+		"/E/IT/百度前端学院练习/2017-baidu/糯米学院/简易MarkDown语法编辑器/markdown语法编辑器2.html",
+		"/E/IT/百度前端学院练习/2017-baidu/糯米学院/简易MarkDown语法编辑器/markdown-fun.js",
+		"/E/IT/杂项练习/some/慕课网练习/无延迟菜单/function.js",
+		"/E/IT/百度前端学院练习/2017-baidu/糯米学院/简易MarkDown语法编辑器/markdown.css",
+		"/E/IT/node.js/abc.js",
+		"/E/IT/杂项练习/some/AcFun/carousel.js",
+		"/C/Users/lalayouchou/Desktop/IT/hello.js",
+		"/C/Users/lalayouchou/Desktop/cs.html",
+		"/E/IT/源码/53a405ad00015c9100000000/demo.html",
+		"/E/IT/百度前端学院练习/2017-baidu/糯米学院/3D木马旋转图/3dimage.js",
+		"/E/IT/百度前端学院练习/2017-baidu/耀耀学院/任务五/yytask5.js",
+		"/E/IT/百度前端学院练习/2017-baidu/糯米学院/3D木马旋转图/3D木马图.html",
+		"/E/IT/杂项练习/some/AcFun/AcFun轮播图.html",
+		"/E/IT/杂项练习/some/慕课网练习/无延迟菜单/jdong2.js",
+		"/E/IT/百度前端学院练习/2017-baidu/耀耀学院/任务六/yytask6.js",
+		"/E/IT/百度前端学院练习/2017-baidu/斌斌学院/任务九/bbtask9.js",
+		"/E/IT/百度前端学院练习/2017-baidu/斌斌学院/任务七/bbtask7_2.js",
+		"/E/IT/杂项练习/some/慕课网练习/js插件开发之-tab选项卡/tab.js",
+		"/C/Users/lalayouchou/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/lalayouchou/AppData/Roaming/Sublime Text 3/Packages/JavaScript Completions/JavaScript-Completions.sublime-settings",
+		"/E/a-song.top/_config.yml",
+		"/E/a-song.top/themes/next/_config.yml",
+		"/E/IT/git and github/github-and-git/index - 副本.html",
+		"/E/IT/git and github/github-and-git/index.html",
+		"/E/IT/杂项练习/some/慕课网练习/图片预加载/preload.js",
+		"/E/IT/杂项练习/some/慕课网练习/常见的加载进度条/timeimage.js",
+		"/E/a-song.top/source/CNAME",
+		"/E/IT/杂项练习/some/慕课网练习/js插件开发之-tab选项卡/tab.css",
+		"/E/IT/git repository/task1.md",
+		"/E/IT/git repository/看看看.js",
+		"/E/IT/源码/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js",
+		"/E/IT/源码/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.css",
+		"/E/IT/源码/bootstrap-4-dev/scss/_pagination.scss",
+		"/E/IT/源码/bootstrap-4-dev/js/src/alert.js",
+		"/E/IT/百度前端学院练习/2017-baidu/新建文件夹/css3-loading/张鑫旭大神===loading.html",
+		"/C/Users/lalayouchou/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript-Completions.sublime-settings",
+		"/C/Users/lalayouchou/AppData/Roaming/Sublime Text 3/Packages/JavaScript Completions/Default (Windows).sublime-keymap",
+		"/E/IT/百度前端学院练习/2017-baidu/新建文件夹/css3饼状loading效果.html",
+		"/C/Users/lalayouchou/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"i",
+			");\n",
+			"C(val,num,value,2,name);",
+			"2",
+			"arr3",
+			"*",
+			"':/~~(.)*~~/,",
+			"on",
+			"text-indent: 10px;",
+			"eidt",
+			"preview",
+			"2",
+			"h2",
+			"objMark",
+			"objSmallBox",
+			"deg",
+			"0deg",
+			"deg",
+			"0deg",
+			"360deg",
+			"250px",
+			"355px",
+			"#",
+			":[\"#\",#,#,#,#],",
+			"<li></li>",
+			"imgs"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "newyear.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 171.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
